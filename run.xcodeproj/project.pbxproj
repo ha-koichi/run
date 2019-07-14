@@ -14,6 +14,10 @@
 		8A9EB7BE22D97ACD00214679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9EB7BC22D97ACD00214679 /* LaunchScreen.storyboard */; };
 		8A9EB7C922D97ACD00214679 /* runTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7C822D97ACD00214679 /* runTests.swift */; };
 		8A9EB7D422D97ACD00214679 /* runUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7D322D97ACD00214679 /* runUITests.swift */; };
+		8A9EB7E222DB791900214679 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7E122DB791900214679 /* UserViewController.swift */; };
+		8A9EB7E422DB7A8B00214679 /* BenefitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7E322DB7A8B00214679 /* BenefitViewController.swift */; };
+		8A9EB7E622DB7AAF00214679 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7E522DB7AAF00214679 /* ChannelViewController.swift */; };
+		8A9EB7E822DB7AC000214679 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7E722DB7AC000214679 /* TalkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8A9EB7CF22D97ACD00214679 /* runUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9EB7D322D97ACD00214679 /* runUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runUITests.swift; sourceTree = "<group>"; };
 		8A9EB7D522D97ACD00214679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9EB7E122DB791900214679 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		8A9EB7E322DB7A8B00214679 /* BenefitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitViewController.swift; sourceTree = "<group>"; };
+		8A9EB7E522DB7AAF00214679 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		8A9EB7E722DB7AC000214679 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				8A9EB7B322D97ACC00214679 /* AppDelegate.swift */,
 				8A9EB7B522D97ACC00214679 /* ViewController.swift */,
 				8A9EB7B722D97ACC00214679 /* Main.storyboard */,
+				8A9EB7E322DB7A8B00214679 /* BenefitViewController.swift */,
+				8A9EB7E522DB7AAF00214679 /* ChannelViewController.swift */,
+				8A9EB7E722DB7AC000214679 /* TalkViewController.swift */,
+				8A9EB7E122DB791900214679 /* UserViewController.swift */,
 				8A9EB7BA22D97ACD00214679 /* Assets.xcassets */,
 				8A9EB7BC22D97ACD00214679 /* LaunchScreen.storyboard */,
 				8A9EB7BF22D97ACD00214679 /* Info.plist */,
@@ -257,7 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A9EB7B622D97ACC00214679 /* ViewController.swift in Sources */,
+				8A9EB7E222DB791900214679 /* UserViewController.swift in Sources */,
+				8A9EB7E422DB7A8B00214679 /* BenefitViewController.swift in Sources */,
 				8A9EB7B422D97ACC00214679 /* AppDelegate.swift in Sources */,
+				8A9EB7E822DB7AC000214679 /* TalkViewController.swift in Sources */,
+				8A9EB7E622DB7AAF00214679 /* ChannelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
