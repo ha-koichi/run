@@ -16,6 +16,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="neX-bF-nuD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2QJ-cL-B5s">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -58,7 +59,7 @@
         <!--Run Channel-->
         <scene sceneID="PrO-Pf-7Ql">
             <objects>
-                <viewController id="Duz-rk-Um2" customClass="ChannelViewController" customModule="run" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Duz-rk-Um2" customClass="ChannelViewController" customModule="run" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gb8-Ha-UlW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,6 +68,36 @@
                                 <rect key="frame" x="0.0" y="88" width="406" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="P97-VN-gXJ" detailTextLabel="lz2-4i-7ZF" style="IBUITableViewCellStyleSubtitle" id="pus-c1-Xjt">
+                                        <rect key="frame" x="0.0" y="28" width="406" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pus-c1-Xjt" id="Oqm-sz-OuS">
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P97-VN-gXJ">
+                                                    <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lz2-4i-7ZF">
+                                                    <rect key="frame" x="20" y="25.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Duz-rk-Um2" id="bKT-QI-WBb"/>
+                                    <outlet property="delegate" destination="Duz-rk-Um2" id="1t5-RR-5fK"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,7 +118,6 @@
         <!--Drawer View Controller-->
         <scene sceneID="VjR-tu-G4A">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mmO-65-iXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="overCurrentContext" id="ull-J8-o3G" customClass="DrawerViewController" customModule="run" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="scaleToFill" id="qa8-sV-ict">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -106,6 +136,7 @@
                         <outlet property="DrawerMenu" destination="aYL-5m-emv" id="4S4-E0-OZv"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmO-65-iXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4119" y="-535"/>
         </scene>
@@ -283,6 +314,6 @@
         <image name="menu_icon" width="72" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="njy-6t-h0K"/>
+        <segue reference="2YD-HR-ca1"/>
     </inferredMetricsTieBreakers>
 </document>

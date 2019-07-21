@@ -20,6 +20,8 @@
 		8A9EB7E822DB7AC000214679 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7E722DB7AC000214679 /* TalkViewController.swift */; };
 		8A9EB7EA22DC0BEB00214679 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7E922DC0BEB00214679 /* LoginViewController.swift */; };
 		8A9EB7EC22DCDE9700214679 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7EB22DCDE9700214679 /* DrawerViewController.swift */; };
+		8ACE861222E341D2005A4F14 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACE861122E341D2005A4F14 /* Alamofire.framework */; };
+		8ACE861422E341E1005A4F14 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACE861322E341E1005A4F14 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		8A9EB7E722DB7AC000214679 /* TalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		8A9EB7E922DC0BEB00214679 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A9EB7EB22DCDE9700214679 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		8ACE861122E341D2005A4F14 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		8ACE861322E341E1005A4F14 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ACE861422E341E1005A4F14 /* SwiftyJSON.framework in Frameworks */,
+				8ACE861222E341D2005A4F14 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +99,7 @@
 				8A9EB7C722D97ACD00214679 /* runTests */,
 				8A9EB7D222D97ACD00214679 /* runUITests */,
 				8A9EB7B122D97ACC00214679 /* Products */,
+				8ACE861022E341D1005A4F14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +150,15 @@
 			path = runUITests;
 			sourceTree = "<group>";
 		};
+		8ACE861022E341D1005A4F14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ACE861322E341E1005A4F14 /* SwiftyJSON.framework */,
+				8ACE861122E341D2005A4F14 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +169,7 @@
 				8A9EB7AC22D97ACB00214679 /* Sources */,
 				8A9EB7AD22D97ACB00214679 /* Frameworks */,
 				8A9EB7AE22D97ACB00214679 /* Resources */,
+				8ACE861522E34203005A4F14 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,6 +285,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ACE861522E34203005A4F14 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A9EB7AC22D97ACB00214679 /* Sources */ = {
@@ -458,6 +497,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA72QL2Y84;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = run/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +519,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA72QL2Y84;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = run/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
