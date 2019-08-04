@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChannelViewController.swift
 //  run
 //
 //  Created by Ha-koichi on 2019/07/13.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class ChannelViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     @IBOutlet weak var tbl: UITableView!
     
@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tbl.dataSource = self
         tbl.delegate = self
-        tbl.register(UINib(nibName: "ChannelViewCellController", bundle: nil), forCellReuseIdentifier: "ChannelViewCellController")
+        tbl.register(UINib(nibName: "ChannelCellViewController", bundle: nil), forCellReuseIdentifier: "ChannelCellViewController")
 
         // Do any additional setup after loading the view.
     }
@@ -39,12 +39,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd"
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelViewCellController", for: indexPath ) as! ChannelViewCellController
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelCellViewController", for: indexPath ) as! ChannelCellViewController
 
         // セルに表示する値を設定する
-        cell.titleLabel.text = data[indexPath.row].0
-        cell.nameLabel.text = data[indexPath.row].1
-        cell.dateLabel.text = formatter.string(from: now as Date)
+        cell.postTitle.text = data[indexPath.row].0
+        cell.postName.text = data[indexPath.row].1
+        cell.postDate.text = formatter.string(from: now as Date)
 //        cell.contentText.text = data[indexPath.row].2
         return cell
     }

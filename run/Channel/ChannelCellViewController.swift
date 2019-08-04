@@ -1,19 +1,18 @@
 //
-//  ChannelViewCellController.swift
+//  ChannelCellViewController.swift
 //  run
 //
-//  Created by Ha-koichi on 2019/07/21.
+//  Created by Ha-koichi on 2019/08/04.
 //  Copyright © 2019 Ha-koichi. All rights reserved.
 //
 
 import UIKit
 
-class ChannelViewCellController: UITableViewCell {
+class ChannelCellViewController: UITableViewCell {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    
+    @IBOutlet weak var postTitle: UILabel!
+    @IBOutlet weak var postName: UILabel!
+    @IBOutlet weak var postDate: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

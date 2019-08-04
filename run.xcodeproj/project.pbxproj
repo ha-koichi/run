@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		0B0A431F2ADF1E5E02D440EF /* Pods_run.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F23EC9B7653941FE955F55 /* Pods_run.framework */; };
 		1B0D84A50A5075596F60BD03 /* Pods_runUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC80D14F1A86FB6E721A5C9 /* Pods_runUITests.framework */; };
-		8A5DD08A22E4583400C3A1D5 /* ChannelViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DD08822E4583400C3A1D5 /* ChannelViewCellController.swift */; };
-		8A5DD08B22E4583400C3A1D5 /* ChannelViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A5DD08922E4583400C3A1D5 /* ChannelViewCellController.xib */; };
 		8A7F42CC22F59F6B00F46832 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A7F42CB22F59F6B00F46832 /* GoogleService-Info.plist */; };
+		8A7F42CF22F5A29D00F46832 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7F42CE22F5A29D00F46832 /* Channel.storyboard */; };
+		8A7F42D722F5F58900F46832 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F42D522F5F58900F46832 /* ChannelViewController.swift */; };
+		8A7F42DC22F703E900F46832 /* ChannelCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F42DA22F703E900F46832 /* ChannelCellViewController.swift */; };
+		8A7F42DD22F703E900F46832 /* ChannelCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A7F42DB22F703E900F46832 /* ChannelCellViewController.xib */; };
 		8A9EB7B422D97ACC00214679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7B322D97ACC00214679 /* AppDelegate.swift */; };
-		8A9EB7B622D97ACC00214679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9EB7B522D97ACC00214679 /* ViewController.swift */; };
 		8A9EB7B922D97ACC00214679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9EB7B722D97ACC00214679 /* Main.storyboard */; };
 		8A9EB7BB22D97ACD00214679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9EB7BA22D97ACD00214679 /* Assets.xcassets */; };
 		8A9EB7BE22D97ACD00214679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9EB7BC22D97ACD00214679 /* LaunchScreen.storyboard */; };
@@ -53,12 +54,13 @@
 		31758EDB9ADC64D4C6A25524 /* Pods-run.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-run.release.xcconfig"; path = "Target Support Files/Pods-run/Pods-run.release.xcconfig"; sourceTree = "<group>"; };
 		52F23EC9B7653941FE955F55 /* Pods_run.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_run.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830168216B23AEB854A94950 /* Pods-runUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runUITests.debug.xcconfig"; path = "Target Support Files/Pods-runUITests/Pods-runUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8A5DD08822E4583400C3A1D5 /* ChannelViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewCellController.swift; sourceTree = "<group>"; };
-		8A5DD08922E4583400C3A1D5 /* ChannelViewCellController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelViewCellController.xib; sourceTree = "<group>"; };
 		8A7F42CB22F59F6B00F46832 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A7F42CE22F5A29D00F46832 /* Channel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Channel.storyboard; sourceTree = "<group>"; };
+		8A7F42D522F5F58900F46832 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		8A7F42DA22F703E900F46832 /* ChannelCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCellViewController.swift; sourceTree = "<group>"; };
+		8A7F42DB22F703E900F46832 /* ChannelCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelCellViewController.xib; sourceTree = "<group>"; };
 		8A9EB7B022D97ACC00214679 /* run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = run.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9EB7B322D97ACC00214679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A9EB7B522D97ACC00214679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A9EB7B822D97ACC00214679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A9EB7BA22D97ACD00214679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A9EB7BD22D97ACD00214679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,6 +126,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8A7F42CD22F5A22900F46832 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F42D522F5F58900F46832 /* ChannelViewController.swift */,
+				8A7F42DA22F703E900F46832 /* ChannelCellViewController.swift */,
+				8A7F42DB22F703E900F46832 /* ChannelCellViewController.xib */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
 		8A9EB7A722D97ACB00214679 = {
 			isa = PBXGroup;
 			children = (
@@ -149,20 +161,19 @@
 		8A9EB7B222D97ACC00214679 /* run */ = {
 			isa = PBXGroup;
 			children = (
+				8A7F42CD22F5A22900F46832 /* Channel */,
 				8A9EB7B322D97ACC00214679 /* AppDelegate.swift */,
-				8A9EB7B522D97ACC00214679 /* ViewController.swift */,
 				8A9EB7B722D97ACC00214679 /* Main.storyboard */,
 				8A9EB7EB22DCDE9700214679 /* DrawerViewController.swift */,
 				8A9EB7E922DC0BEB00214679 /* LoginViewController.swift */,
 				8A9EB7E322DB7A8B00214679 /* BenefitViewController.swift */,
-				8A5DD08822E4583400C3A1D5 /* ChannelViewCellController.swift */,
-				8A5DD08922E4583400C3A1D5 /* ChannelViewCellController.xib */,
 				8A9EB7E722DB7AC000214679 /* TalkViewController.swift */,
 				8A9EB7E122DB791900214679 /* UserViewController.swift */,
 				8A9EB7BA22D97ACD00214679 /* Assets.xcassets */,
 				8A9EB7BC22D97ACD00214679 /* LaunchScreen.storyboard */,
 				8A9EB7BF22D97ACD00214679 /* Info.plist */,
 				8A7F42CB22F59F6B00F46832 /* GoogleService-Info.plist */,
+				8A7F42CE22F5A29D00F46832 /* Channel.storyboard */,
 			);
 			path = run;
 			sourceTree = "<group>";
@@ -306,10 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7F42CF22F5A29D00F46832 /* Channel.storyboard in Resources */,
 				8A9EB7BE22D97ACD00214679 /* LaunchScreen.storyboard in Resources */,
+				8A7F42DD22F703E900F46832 /* ChannelCellViewController.xib in Resources */,
 				8A9EB7BB22D97ACD00214679 /* Assets.xcassets in Resources */,
 				8A7F42CC22F59F6B00F46832 /* GoogleService-Info.plist in Resources */,
-				8A5DD08B22E4583400C3A1D5 /* ChannelViewCellController.xib in Resources */,
 				8A9EB7B922D97ACC00214679 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,11 +454,11 @@
 			files = (
 				8A9EB7EA22DC0BEB00214679 /* LoginViewController.swift in Sources */,
 				8A9EB7EC22DCDE9700214679 /* DrawerViewController.swift in Sources */,
-				8A5DD08A22E4583400C3A1D5 /* ChannelViewCellController.swift in Sources */,
-				8A9EB7B622D97ACC00214679 /* ViewController.swift in Sources */,
+				8A7F42DC22F703E900F46832 /* ChannelCellViewController.swift in Sources */,
 				8A9EB7E222DB791900214679 /* UserViewController.swift in Sources */,
 				8A9EB7E422DB7A8B00214679 /* BenefitViewController.swift in Sources */,
 				8A9EB7B422D97ACC00214679 /* AppDelegate.swift in Sources */,
+				8A7F42D722F5F58900F46832 /* ChannelViewController.swift in Sources */,
 				8A9EB7E822DB7AC000214679 /* TalkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
